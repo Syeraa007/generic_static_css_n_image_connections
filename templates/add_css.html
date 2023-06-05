@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adding css,images</title>
+    <link rel="stylesheet" href="{% static 'css/add_css.css' %}">
+</head>
+<body>
+    <center> 
+        <h1>Adding static files like css and images to html page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, laudantium. Recusandae cum laudantium quam rem illum! Placeat dolore tempora est incidunt autem id ea vitae, ipsa sequi odit, atque a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae reprehenderit explicabo at, doloremque molestias nam repudiandae incidunt adipisci cumque eos vero omnis! Saepe quas nemo, nam labore facilis eligendi.</p>
+        
+        <h2> Normal image tagging </h2>
+        <div>
+            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" style="width:200px">
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptas alias veniam? Expedita dicta fuga optio saepe nulla molestias odio vero aperiam iste natus unde necessitatibus aut, ut vitae esse?
+        Minus, sequi? Rem eos numquam reprehenderit quam ex odit reiciendis eaque maxime magnam recusandae earum doloribus libero nobis amet consequuntur totam deleniti eveniet consequatur voluptate obcaecati quo,?</p> <hr><hr>
+
+        <h2> Image tagging using jinja </h2>
+        <div>
+            <img src="{% static 'images/love.jpg' %}" alt="Avatar" style="width:200px">
+            <img src="{% static 'images/3Ls.jpeg' %}" alt="Avatar" style="width:200px">
+            <img src="{% static 'images/moon.png' %}" alt="Avatar" style="width:200px">
+            <img src="{% static 'images/liar.jpg' %}" alt="Avatar" style="width:200px">
+            <img src="{% static 'images/me2.jpeg' %}" alt="Avatar" style="width:200px">    
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ea pariatur. Alias voluptatibus quam nisi fugit praesentium consequatur earum nulla beatae tempore ducimus, nemo placeat minus tempora vitae magnam omnis!
+        Accusantium voluptatibus earum incidunt expedita commodi unde illum sed tempora et. Fugiat officiis dolorem illo sequi modi ipsum obcaecati minus esse. Temporibus recusandae neque nisi modi eius harum iste eum?</p> <hr><hr>
+        
+
+    </center>
+</body>
+</html>
